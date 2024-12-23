@@ -1,0 +1,9 @@
+.intro__list-item {
+    display: flex;
+    align-items: baseline; /* Выравнивание текста и цифр */
+}
+
+.intro__list-item span:last-child {
+    font-weight: 700; /* Bold */
+    color:white;
+}

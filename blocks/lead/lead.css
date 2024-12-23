@@ -1,0 +1,53 @@
+.lead {
+    max-width: 984px; /* Размер блока */
+    height: 1005px; /* Высота блока */
+    margin: 0 auto; /* Центрирование блока */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по центру */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+.lead__title {
+    max-width: 720px; /* Размер заголовка */
+    margin: 0; /* Убираем отступы */
+    font-family: 'Inter', Arial, sans-serif; /* Шрифт Inter Black */
+    font-style: normal;
+    font-weight: 900; /* Black */
+    font-size: 96px; /* Размер шрифта */
+    line-height: 100px; /* Межстрочный интервал */
+    color: white;
+}
+
+/* Подзаголовок */
+.lead__subtitle {
+    max-width: 640px; /* Размер подзаголовка */
+    margin: 32px 0 64px; /* Верхний отступ 32px, нижний отступ 64px */
+    font-family: 'Inter', Arial, sans-serif; /* Шрифт Inter Regular */
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    font-size: 30px; /* Размер шрифта */
+    line-height: 36px; /* Межстрочный интервал */
+    color:white
+}
+
+/* Изображение */
+.lead__image {
+    width: 984px; /* Размер изображения */
+    height: 615px; /* Высота изображения */
+    object-fit: cover; /* Масштабирование изображения */
+}
+
+/* Подпись к фото */
+.lead__caption {
+    align-self: flex-start; /* Прижатие к левому краю */
+    margin: 8px 0 0; /* Верхний отступ 8px */
+    font-family: 'Inter', Arial, sans-serif; /* Шрифт Inter Regular */
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    font-size: 10px; /* Размер шрифта */
+    line-height: 14px; /* Межстрочный интервал */
+    max-width: 158px; /* Размер подписи */
+    color:white;
+    letter-spacing: 1.5px;
+}

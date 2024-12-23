@@ -1,0 +1,90 @@
+.places {
+    max-width: 984px; /* Размер блока */
+    margin: 92px auto 0; /* Верхний отступ 92px, центрирование */
+    display: flex;
+    flex-direction: column;
+    gap: 80px; /* Отступ между блоками place */
+}
+
+/* Блок place */
+.place {
+    display: grid;
+    grid-template-columns: 460px 1fr; /* Две колонки: заголовок и описание */
+    gap: 40px; /* Отступ между колонками */
+}
+
+/* Заголовок */
+.place__title {
+    max-width: 460px; /* Размер заголовка */
+    margin: 0; /* Убираем отступы */
+    font-family: 'Inter', Arial, sans-serif; /* Шрифт Inter Black */
+    font-style: normal;
+    font-weight: 900; /* Black */
+    font-size: 72px; /* Размер шрифта */
+    line-height: 76px; /* Межстрочный интервал */
+    color: #ffffff; /* Белый цвет текста */
+}
+
+/* Блок website */
+.place__website {
+    max-width: 456px; /* Размер блока */
+    align-self: end; /* Прижимаем к нижнему краю */
+    margin-left: 40px; /* Отступ слева */
+    margin-top: 0; /* Убираем верхний отступ */
+}
+
+/* URL-heading */
+.place__url-heading {
+    margin: 0 0 12px; /* Нижний отступ */
+    font-family: 'Inter', Arial, sans-serif; /* Шрифт Inter Regular */
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    font-size: 14px; /* Размер шрифта */
+    line-height: 12px; /* Межстрочный интервал */
+    color: #aaaaaa; /* Серый цвет текста */
+    letter-spacing: 2px;
+}
+
+/* Ссылка */
+.place__link {
+    font-family: 'Inter', Arial, sans-serif; /* Шрифт Inter Regular */
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    font-size: 18px; /* Размер шрифта */
+    line-height: 22px; /* Межстрочный интервал */
+    color: #ffffff; /* Белый цвет текста */
+    text-decoration: underline; /* Подчёркивание */
+    transition: opacity 0.3s ease; /* Плавное изменение прозрачности */
+}
+
+.place__link:hover {
+    opacity: 0.8; /* Эффект при наведении */
+}
+
+/* Изображение */
+.place__image {
+    width: 460px; /* Размер изображения */
+    height: 460px; /* Высота изображения */
+    object-fit: cover; /* Масштабирование изображения */
+    margin-top: 40px; /* Верхний отступ 40px */
+}
+
+/* Абзацы */
+.place__paragraphs {
+    max-width: 456px; /* Размер блока */
+    margin-left: 40px; /* Отступ слева */
+    margin-top: 48px; /* Верхний отступ */
+    display: flex;
+    flex-direction: column;
+    gap: 26px; /* Отступ между абзацами */
+}
+
+.place__paragraph {
+    margin: 0; /* Убираем отступы */
+    font-family: 'Inter', Arial, sans-serif; /* Шрифт Inter Regular */
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    font-size: 18px; /* Размер шрифта */
+    line-height: 163%; /* Межстрочный интервал */
+    color: #ffffff; /* Белый цвет текста */
+}

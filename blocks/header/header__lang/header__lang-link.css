@@ -1,0 +1,19 @@
+.header__lang-link {
+    font-family: 'Inter', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.header__lang-link:hover {
+    opacity: 0.8; /* Эффект при наведении */
+}
+
+.header__lang-link_active {
+    text-decoration: underline; /* Подчёркивание для активной ссылки */
+    text-underline-offset: 4px; /* Смещение подчёркивания (если нужно) */
+}

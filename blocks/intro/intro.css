@@ -1,0 +1,31 @@
+.intro {
+    max-width: 690px; /* Размер блока */
+    height: 429px; /* Высота блока */
+    margin: 92px 0 0 148px; /* Верхний отступ 92px, левый отступ 148px */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок */
+.intro__title {
+    max-width: 690px; /* Размер заголовка */
+    margin: 0 0 40px; /* Нижний отступ 40px */
+    font-family: 'Inter', Arial, sans-serif; /* Шрифт Inter Black */
+    font-style: normal;
+    font-weight: 900; /* Black */
+    font-size: 54px; /* Размер шрифта */
+    line-height: 58px; /* Межстрочный интервал */
+    color:white;
+}
+
+/* Текст */
+.intro__text {
+    max-width: 690px; /* Размер текста */
+    margin: 0 0 33px; /* Нижний отступ 33px */
+    font-family: 'Inter', Arial, sans-serif; /* Шрифт Inter Regular */
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    font-size: 16px; /* Размер шрифта */
+    line-height: 163%; /* Межстрочный интервал */
+    color:white;
+}

@@ -1,0 +1,5 @@
+.intro__list-text {
+    font-weight: 400; /* Regular */
+    margin-right: 5px; /* Отступ между текстом и цифрой */
+    color:white;
+}

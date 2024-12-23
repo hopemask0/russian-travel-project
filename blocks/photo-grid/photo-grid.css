@@ -1,0 +1,15 @@
+.photo-grid {
+    max-width: 1184px; /* Размер блока */
+    height: 671px; /* Высота блока */
+    margin: 92px auto 0; /* Верхний отступ 92px, центрирование */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr)); /* Автоматическая сетка */
+    gap: 16px; /* Расстояние между картинками */
+    justify-items: center; /* Центрирование элементов */
+}
+
+.photo-grid__item {
+    width: 284px; /* Размер каждой картинки */
+    height: 213px; /* Высота каждой картинки */
+    object-fit: cover; /* Масштабирование изображения */
+}
