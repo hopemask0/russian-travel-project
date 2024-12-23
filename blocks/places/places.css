@@ -88,3 +88,85 @@
     line-height: 163%; /* Межстрочный интервал */
     color: #ffffff; /* Белый цвет текста */
 }
+
+@media screen and (max-width: 1279px) {
+    .places {
+      max-width: 928px;
+      padding: 0 24px; /* Боковые отступы */
+    }
+  
+    .place {
+      grid-template-columns: 440px 1fr; /* Уменьшенная ширина колонки */
+      gap: 32px; /* Уменьшенный отступ */
+    }
+  
+    .place__image {
+      width: 440px;
+      height: 440px;
+    }
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .places {
+      max-width: 720px;
+      margin-top: 88px;
+      padding: 0 24px; /* Боковые отступы */
+    }
+  
+    .place {
+      grid-template-columns: 340px 1fr; /* Уменьшенная ширина колонки */
+      gap: 28px; /* Уменьшенный отступ */
+    }
+  
+    .place__title {
+      font-size: 42px;
+      line-height: 1.1;
+    }
+  
+    .place__image {
+      width: 340px;
+      height: 340px;
+    }
+  
+    .place__paragraph {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .places {
+      max-width: 100%; /* Ширина 100% */
+      margin-top: 64px;
+      padding: 0 16px; /* Боковые отступы */
+      gap: 50px; /* Уменьшенный отступ между блоками */
+    }
+  
+    .place {
+      display: flex;
+      flex-direction: column; /* Переход на одну колонку */
+      gap: 32px; /* Отступ между элементами */
+    }
+  
+    .place__title {
+      font-size: 32px;
+      line-height: 1.1;
+      padding-left: 16px; /* Отступ слева */
+    }
+  
+    .place__website {
+      align-self: flex-start; /* Прижимаем к верхнему краю */
+      margin-left: 16px; /* Отступ слева */
+    }
+  
+    .place__image {
+      width: 100%; /* Ширина 100% */
+      height: auto; /* Высота автоматически подстраивается */
+      margin: 0; /* Убираем отступы */
+    }
+  
+    .place__paragraphs {
+      margin: 0; /* Убираем отступы */
+      padding: 0 16px; /* Боковые отступы */
+    }
+  }

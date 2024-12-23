@@ -1,6 +1,5 @@
 .photo-grid {
-    max-width: 1184px; /* Размер блока */
-    height: 671px; /* Высота блока */
+    max-width: 1184px; /* Размер блока */ /* Высота блока */
     margin: 92px auto 0; /* Верхний отступ 92px, центрирование */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(284px, 1fr)); /* Автоматическая сетка */
@@ -10,6 +9,34 @@
 
 .photo-grid__item {
     width: 284px; /* Размер каждой картинки */
-    height: 213px; /* Высота каждой картинки */
+     /* Высота каждой картинки */
     object-fit: cover; /* Масштабирование изображения */
+}
+
+@media screen and (max-width: 1279px) {
+    .photo-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      max-width: 928px;
+      grid-gap: 14px;
+    }
+}
+  
+@media screen and (max-width: 1023px) {
+    .photo-grid {
+      grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+      max-width: 720px;
+      grid-gap: 16px;
+      margin-top: 88px;
+      padding: 0 24px;
+    }
+}
+  
+@media screen and (max-width: 767px) {
+    .photo-grid {
+      grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+      max-width: 288px;
+      grid-gap: 12px;
+      margin-top: 64px;
+      padding: 0 16px;
+    }
 }

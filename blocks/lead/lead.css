@@ -1,53 +1,110 @@
+/* Основной блок lead */
 .lead {
-    max-width: 984px; /* Размер блока */
-    height: 1005px; /* Высота блока */
+    max-width: 984px; /* Максимальная ширина блока */
     margin: 0 auto; /* Центрирование блока */
     display: flex;
     flex-direction: column;
     align-items: center; /* Выравнивание по центру */
     text-align: center; /* Выравнивание текста по центру */
-}
-
-.lead__title {
-    max-width: 720px; /* Размер заголовка */
-    margin: 0; /* Убираем отступы */
+    padding: 0 48px; /* Боковые отступы */
+  }
+  
+  /* Заголовок */
+  .lead__title {
+    max-width: 720px; /* Максимальная ширина заголовка */
+    margin: 0 0 32px; /* Нижний отступ 32px */
     font-family: 'Inter', Arial, sans-serif; /* Шрифт Inter Black */
     font-style: normal;
     font-weight: 900; /* Black */
     font-size: 96px; /* Размер шрифта */
     line-height: 100px; /* Межстрочный интервал */
     color: white;
-}
-
-/* Подзаголовок */
-.lead__subtitle {
-    max-width: 640px; /* Размер подзаголовка */
-    margin: 32px 0 64px; /* Верхний отступ 32px, нижний отступ 64px */
+  }
+  
+  /* Подзаголовок */
+  .lead__subtitle {
+    max-width: 640px; /* Максимальная ширина подзаголовка */
+    margin: 0 0 64px; /* Нижний отступ 64px */
     font-family: 'Inter', Arial, sans-serif; /* Шрифт Inter Regular */
     font-style: normal;
     font-weight: 400; /* Regular */
     font-size: 30px; /* Размер шрифта */
     line-height: 36px; /* Межстрочный интервал */
-    color:white
-}
-
-/* Изображение */
-.lead__image {
-    width: 984px; /* Размер изображения */
-    height: 615px; /* Высота изображения */
+    color: white;
+  }
+  
+  /* Изображение */
+  .lead__image {
+    width: 100%; /* Ширина 100% */
+    max-width: 984px; /* Максимальная ширина изображения */
+    height: auto; /* Высота автоматически подстраивается */
     object-fit: cover; /* Масштабирование изображения */
-}
-
-/* Подпись к фото */
-.lead__caption {
+    margin-bottom: 8px; /* Нижний отступ */
+  }
+  
+  /* Подпись к фото */
+  .lead__caption {
     align-self: flex-start; /* Прижатие к левому краю */
-    margin: 8px 0 0; /* Верхний отступ 8px */
+    margin: 0; /* Убираем отступы */
     font-family: 'Inter', Arial, sans-serif; /* Шрифт Inter Regular */
     font-style: normal;
     font-weight: 400; /* Regular */
     font-size: 10px; /* Размер шрифта */
     line-height: 14px; /* Межстрочный интервал */
-    max-width: 158px; /* Размер подписи */
-    color:white;
+    max-width: 158px; /* Максимальная ширина подписи */
+    color: white;
     letter-spacing: 1.5px;
-}
+  }
+  
+  /* Медиа-запросы для адаптивности */
+  @media screen and (max-width: 1279px) {
+    .lead {
+      max-width: 928px; /* Максимальная ширина блока */
+      padding: 0 24px; /* Боковые отступы */
+    }
+  
+    .lead__image {
+      max-width: 100%; /* Максимальная ширина изображения */
+    }
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .lead {
+      max-width: 100%; /* Ширина 100% */
+      padding: 0 24px; /* Боковые отступы */
+    }
+  
+    .lead__image {
+      max-width: 100%; /* Максимальная ширина изображения */
+    }
+  
+    .lead__caption {
+      padding-left: 24px; /* Отступ слева */
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .lead {
+      max-width: 100%; /* Ширина 100% */
+      padding: 0 16px; /* Боковые отступы */
+    }
+  
+    .lead__title {
+      font-size: 40px; /* Размер шрифта */
+      line-height: 1.1; /* Межстрочный интервал */
+    }
+  
+    .lead__subtitle {
+      font-size: 16px; /* Размер шрифта */
+      line-height: 1.25; /* Межстрочный интервал */
+      margin-bottom: 40px; /* Нижний отступ */
+    }
+  
+    .lead__image {
+      max-width: 100%; /* Максимальная ширина изображения */
+    }
+  
+    .lead__caption {
+      padding-left: 16px; /* Отступ слева */
+    }
+  }

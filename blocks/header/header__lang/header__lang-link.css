@@ -17,3 +17,10 @@
     text-decoration: underline; /* Подчёркивание для активной ссылки */
     text-underline-offset: 4px; /* Смещение подчёркивания (если нужно) */
 }
+
+@media screen and (max-width: 767px) {
+    .header__lang-link {
+      font-size: 18px;
+      line-height: 1.3;
+    }
+}
